@@ -11,3 +11,12 @@ The template for golang project
 * Place your code in root directory
 * Run `go mod init` with you repo URL
 * Run `go mod vendor` after development
+
+## Setup CI
+
+* Open [Circle CI](https://circleci.com/) and setup your project
+* Add `Github Token (GITHUB_TOKEN)` to Circle CI Project Env for Release
+
+## Release Version
+
+* Run `./release.sh VERSION` like `./release.sh v0.0.1` to release project with new version
