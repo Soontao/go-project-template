@@ -8,9 +8,10 @@ The template for golang project
 
 * [![](https://res.cloudinary.com/digf90pwi/image/upload/c_scale,r_14,w_98/a_0/v1581731363/%E6%8D%95%E8%8E%B7_iqiuwl.png)](https://github.com/Soontao/go-project-template/generate) to create new project 
 * Change `LICENSE` if necessary
-* Place your code in root directory
+* Modify [info.repository_url](./chglog) as your own project url
 * Run `go mod init` with you repo URL
-* Run `go mod vendor` after development
+* Place your source code in root directory
+* Run `go mod vendor` after development (remember `vendor` your deps after add any libraries)
 
 ## Setup CI
 
@@ -19,4 +20,4 @@ The template for golang project
 
 ## Release Version
 
-* Run `./release.sh VERSION` like `./release.sh v0.0.1` to release project with new version
+* Run `./release.sh VERSION` like `./release.sh v0.0.1` to release a version
