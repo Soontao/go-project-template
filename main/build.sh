@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # cli file name
+# change this please
 OUTPUT_FILENAME="cli"
 
 # platforms
