@@ -25,6 +25,10 @@ func main() {
 	app.Usage = AppUsage
 	app.Flags = options
 	app.EnableBashCompletion = true
+	app.Commands = []cli.Command{
+		commandStart,
+	}
+
 	sort.Sort(cli.CommandsByName(app.Commands))
 
 	if err := app.Run(os.Args); err != nil {

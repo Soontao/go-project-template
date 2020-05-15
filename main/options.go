@@ -4,8 +4,8 @@ import "github.com/urfave/cli"
 
 var options = []cli.Flag{
 	&cli.StringFlag{
-		Name:    "username, u",
-		EnvVars: []string{"USER"},
-		Usage:   "Username",
+		Name:   "username, u",
+		EnvVar: "USER",
+		Usage:  "Username",
 	},
 }
