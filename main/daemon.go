@@ -15,16 +15,16 @@ func createDaemonCommands(name, description string) ([]cli.Command, error) {
 			Name:  "install",
 			Usage: "install service",
 			Action: func(c *cli.Context) error {
-				opt := c.String("options")
-				_, err := m.Install(opt)
+				opt := c.StringSlice("args")
+				_, err := m.Install(opt...)
 				return err
 			},
 			Flags: []cli.Flag{
-				cli.StringFlag{
-					Name:   "options, o",
+				cli.StringSliceFlag{
+					Name:   "args, a",
 					Usage:  "service running args",
-					Value:  "entry",
-					EnvVar: "SERVICE_INSTALL_ARGS",
+					Value:  &cli.StringSlice{"entry"},
+					EnvVar: "SERVICE_RUNNING_ARGS",
 				},
 			},
 		},
