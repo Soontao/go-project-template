@@ -3,7 +3,7 @@ jobs:
 
   test:
     docker:
-      - image: circleci/golang:1.14
+      - image: circleci/golang:1.15
 
     working_directory: ~/app
     steps:
@@ -13,7 +13,7 @@ jobs:
       - run: go build -mod=vendor .
   build:
     docker:
-      - image: circleci/golang:1.14
+      - image: circleci/golang:1.15
 
     working_directory: ~/app
     steps:

@@ -13,7 +13,7 @@ import (
 var Version = "SNAPSHOT"
 
 // AppName of this application
-var AppName = "Command Line Tool Util"
+var AppName = "CommandLineToolUtil"
 
 // AppUsage of this application
 var AppUsage = "A Command Line Tool"
@@ -25,9 +25,19 @@ func main() {
 	app.Usage = AppUsage
 	app.Flags = options
 	app.EnableBashCompletion = true
-	app.Commands = []cli.Command{
-		commandStart,
+
+	commonCommands := []cli.Command{
+		commandEntry,
 	}
+
+	daemonCommands, err := createDaemonCommands(AppName, AppUsage)
+
+	if err != nil {
+		log.Fatal(err)
+		return
+	}
+
+	app.Commands = append(commonCommands, daemonCommands...)
 
 	sort.Sort(cli.CommandsByName(app.Commands))
 
