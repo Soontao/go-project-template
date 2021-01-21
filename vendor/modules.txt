@@ -1,17 +1,17 @@
 # github.com/cpuguy83/go-md2man/v2 v2.0.0
 ## explicit
 github.com/cpuguy83/go-md2man/v2/md2man
-# github.com/russross/blackfriday/v2 v2.0.1
+# github.com/russross/blackfriday/v2 v2.1.0
+## explicit
 github.com/russross/blackfriday/v2
-# github.com/shurcooL/sanitized_anchor_name v1.0.0
-github.com/shurcooL/sanitized_anchor_name
 # github.com/takama/daemon v1.0.0
 ## explicit
 github.com/takama/daemon
-# github.com/urfave/cli v1.22.4
+# github.com/urfave/cli v1.22.5
 ## explicit
 github.com/urfave/cli
-# golang.org/x/sys v0.0.0-20200722175500-76b94024e4b6
+# golang.org/x/sys v0.0.0-20210119212857-b64e53b001e4
+## explicit
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/windows
 golang.org/x/sys/windows/registry
