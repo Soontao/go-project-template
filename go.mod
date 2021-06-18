@@ -8,5 +8,5 @@ require (
 	github.com/stretchr/testify v1.7.0
 	github.com/takama/daemon v1.0.0
 	github.com/urfave/cli v1.22.5
-	golang.org/x/sys v0.0.0-20210415045647-66c3f260301c // indirect
+	golang.org/x/sys v0.0.0-20210616094352-59db8d763f22 // indirect
 )
