@@ -8,16 +8,6 @@ import (
 	"github.com/urfave/cli"
 )
 
-// Version string, in release version
-// This variable will be overwrited by complier
-var Version = "SNAPSHOT"
-
-// AppName of this application
-var AppName = "CommandLineToolUtil"
-
-// AppUsage of this application
-var AppUsage = "A Command Line Tool"
-
 func main() {
 	app := cli.NewApp()
 	app.Version = Version

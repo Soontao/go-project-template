@@ -37,9 +37,26 @@ jobs:
       - name: set snapshot version
         run: echo "VERSION=$(echo $GITHUB_SHA | cut -c 1-6)" >> $GITHUB_ENV
 
+      - name: Get appName
+        id: appname
+        uses: notiz-dev/github-action-json-property@release
+        with: 
+            path: 'app.json'
+            prop_path: 'appName'
+
+      - name: Get app description
+        id: app-description
+        uses: notiz-dev/github-action-json-property@release
+        with: 
+            path: 'app.json'
+            prop_path: 'appDescription'
+
       - name: build
         working-directory: main
         run: bash build.sh
+        env:
+          APPNAME: ${{steps.appname.outputs.prop}} 
+          APPDESCRIPTION: ${{steps.app-description.outputs.prop}} 
 
       - name: upload artifact
         uses: actions/upload-artifact@v1.0.0

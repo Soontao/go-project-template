@@ -19,6 +19,7 @@ output
 output.*
 *.xlsx
 main/*cli*
+main/main
 main/build
 main/*.zip
 main/output

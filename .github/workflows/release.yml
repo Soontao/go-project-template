@@ -24,10 +24,26 @@ jobs:
       - name: run unit tests
         run: go test -v ./... -race
 
+      - name: Get appName
+        id: appname
+        uses: notiz-dev/github-action-json-property@release
+        with: 
+            path: 'app.json'
+            prop_path: 'appName'
+
+      - name: Get app description
+        id: app-description
+        uses: notiz-dev/github-action-json-property@release
+        with: 
+            path: 'app.json'
+            prop_path: 'appDescription'
+
       - name: build
         run: bash build.sh
         env:
           VERSION: ${{ steps.tagName.outputs.tag }}
+          APPNAME: ${{ steps.appname.outputs.prop }} 
+          APPDESCRIPTION: ${{ steps.app-description.outputs.prop }} 
 
       - name: create Release
         id: create_release

@@ -1,17 +1,16 @@
 #!/bin/bash
 
-# cli file name
-# change this please
-OUTPUT_FILENAME="cli"
-
 # platforms
 PLATFORMS="darwin/amd64"
 PLATFORMS="$PLATFORMS windows/amd64"
 PLATFORMS="$PLATFORMS linux/amd64"
 PLATFORMS_ARM="linux"
 
+OUTPUT_FILENAME=${APPNAME:-cli}
 # default version as 'snapshot'
 VERSION=${VERSION:-snapshot}
+DATE=$(date +%FT%T%z)
+COMMIT=$(git rev-parse --short HEAD)
 
 type setopt >/dev/null 2>&1
 
@@ -20,7 +19,7 @@ FAILURES=""
 SOURCE_FILE=`echo $@ | sed 's/\.go//'`
 CURRENT_DIRECTORY=${PWD##*/}
 OUTPUT=build/${SOURCE_FILE:-$OUTPUT_FILENAME} # if no src file given, use current dir name
-LDFLAGS="-ldflags \"-X main.Version=${VERSION}\" -mod=vendor"
+LDFLAGS="-ldflags \"-X main.Version=${VERSION} -X main.Commit=${COMMIT} -X main.BuildDate=${DATE}  -X 'main.AppName=$APPNAME' -X 'main.AppUsage=$APPDESCRIPTION'\"  -mod=vendor"
 
 for PLATFORM in $PLATFORMS; do
   GOOS=${PLATFORM%/*}
