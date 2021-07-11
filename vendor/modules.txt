@@ -1,3 +1,6 @@
+# github.com/Soontao/go-project-template v0.0.0-20210711101649-0f4ac9af3837
+## explicit
+github.com/Soontao/go-project-template/app
 # github.com/cpuguy83/go-md2man/v2 v2.0.0
 ## explicit
 github.com/cpuguy83/go-md2man/v2/md2man

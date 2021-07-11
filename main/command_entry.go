@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Soontao/go-project-template/app"
+	"fornever.org/app"
 	"github.com/urfave/cli"
 )
 

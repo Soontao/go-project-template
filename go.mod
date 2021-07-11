@@ -1,8 +1,9 @@
-module github.com/Soontao/go-project-template
+module fornever.org
 
 go 1.14
 
 require (
+	github.com/Soontao/go-project-template v0.0.0-20210711101649-0f4ac9af3837
 	github.com/cpuguy83/go-md2man/v2 v2.0.0 // indirect
 	github.com/gin-gonic/gin v1.7.2
 	github.com/go-playground/validator/v10 v10.7.0 // indirect

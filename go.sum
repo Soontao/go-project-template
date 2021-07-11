@@ -1,4 +1,6 @@
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
+github.com/Soontao/go-project-template v0.0.0-20210711101649-0f4ac9af3837 h1:TQZ3A+p5b7lazIO5XTxWtffoHLaJN0scyOIu2hnwego=
+github.com/Soontao/go-project-template v0.0.0-20210711101649-0f4ac9af3837/go.mod h1:nOHAcwt2637fQR/WBF2aRs5/Omsj8uJN70wmbWUdZdw=
 github.com/cpuguy83/go-md2man/v2 v2.0.0-20190314233015-f79a8a8ca69d/go.mod h1:maD7wRr/U5Z6m/iR4s+kqSMx2CaBsrgA7czyZG/E6dU=
 github.com/cpuguy83/go-md2man/v2 v2.0.0 h1:EoUDS0afbrsXAZ9YQ9jdu/mZ2sXgT1/2yyNng4PGlyM=
 github.com/cpuguy83/go-md2man/v2 v2.0.0/go.mod h1:maD7wRr/U5Z6m/iR4s+kqSMx2CaBsrgA7czyZG/E6dU=
