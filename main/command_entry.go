@@ -1,9 +1,7 @@
 package main
 
 import (
-	"io"
-	"net/http"
-
+	"github.com/Soontao/go-project-template/app"
 	"github.com/urfave/cli"
 )
 
@@ -13,20 +11,20 @@ var commandEntry = cli.Command{
 	Action: entry,
 	Flags: []cli.Flag{
 		cli.StringFlag{
-			Name:  "port",
-			Value: ":8888",
+			Name:   "addr",
+			EnvVar: "LISTEN_ADDR",
+			Value:  "0.0.0.0:8080",
 		},
 	},
 }
 
 func entry(c *cli.Context) error {
 
-	port := c.String("port")
-
-	http.HandleFunc("/", func(w http.ResponseWriter, req *http.Request) {
-		io.WriteString(w, "Hello, world!\n")
+	inst := app.CreateApp(&app.WebAppParam{
+		ServiceName: AppName,
+		Version:     Version,
+		Flag1:       false,
 	})
-
-	return http.ListenAndServe(port, nil)
+	return inst.Run(c.String("addr"))
 
 }
