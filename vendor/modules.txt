@@ -1,6 +1,3 @@
-# github.com/Soontao/go-project-template v0.0.0-20210711101649-0f4ac9af3837
-## explicit
-github.com/Soontao/go-project-template/app
 # github.com/cpuguy83/go-md2man/v2 v2.0.0
 ## explicit
 github.com/cpuguy83/go-md2man/v2/md2man
@@ -106,10 +103,6 @@ google.golang.org/protobuf/reflect/protoregistry
 google.golang.org/protobuf/runtime/protoiface
 google.golang.org/protobuf/runtime/protoimpl
 google.golang.org/protobuf/types/descriptorpb
-# gopkg.in/go-playground/assert.v1 v1.2.1
-## explicit
-# gopkg.in/go-playground/validator.v8 v8.18.2
-## explicit
 # gopkg.in/yaml.v2 v2.4.0
 ## explicit
 gopkg.in/yaml.v2
