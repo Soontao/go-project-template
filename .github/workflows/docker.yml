@@ -43,7 +43,7 @@ jobs:
       # https://github.com/booxmedialtd/ws-action-parse-semver
       - name: Parse version
         id: semver-version
-        uses: booxmedialtd/ws-action-parse-semver@v1.3.1
+        uses: booxmedialtd/ws-action-parse-semver@v1.4.7
         with:
           input_string: ${{ github.ref }}
           version_extractor_regex: '\/v(.*)$'
