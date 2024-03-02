@@ -24,9 +24,6 @@ main/build
 main/*.zip
 main/output
 
-# launch 
-.vscode/launch.json
-
 # mac os
 .DS_Store
 
