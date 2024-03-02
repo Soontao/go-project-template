@@ -10,6 +10,15 @@
       "source.organizeImports": "explicit"
     }
   },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "main/__debug*": true
+  },
   "files.eol": "\n",
   "editor.tabFocusMode": false,
   "workbench.editor.pinnedTabSizing": "normal"

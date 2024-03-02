@@ -33,3 +33,6 @@ main/output
 # ast tests
 
 ast/**/output.json
+
+# debug 
+*/__debug*
