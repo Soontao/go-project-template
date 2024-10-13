@@ -146,7 +146,7 @@ github.com/ugorji/go/codec
 # github.com/urfave/cli v1.22.16
 ## explicit; go 1.11
 github.com/urfave/cli
-# github.com/urfave/cli/v2 v2.27.4
+# github.com/urfave/cli/v2 v2.27.5
 ## explicit; go 1.18
 # golang.org/x/arch v0.8.0
 ## explicit; go 1.18
