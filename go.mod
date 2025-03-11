@@ -8,7 +8,7 @@ require (
 	github.com/gin-gonic/gin v1.10.0
 	github.com/stretchr/testify v1.10.0
 	github.com/takama/daemon v1.0.0
-	github.com/urfave/cli v1.22.16
+	github.com/urfave/cli/v2 v2.27.6
 	github.com/urfave/cli/v2 v2.27.6
 )
 
