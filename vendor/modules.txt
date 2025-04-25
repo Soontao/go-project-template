@@ -160,6 +160,8 @@ github.com/ugorji/go/codec
 github.com/urfave/cli
 # github.com/urfave/cli/v2 v2.27.6
 ## explicit; go 1.18
+# github.com/urfave/cli/v3 v3.2.0
+## explicit; go 1.22
 # golang.org/x/arch v0.11.0
 ## explicit; go 1.18
 golang.org/x/arch/x86/x86asm
