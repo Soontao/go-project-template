@@ -9,8 +9,8 @@ require (
 	github.com/stretchr/testify v1.10.0
 	github.com/takama/daemon v1.0.0
 	github.com/urfave/cli v1.22.16
-	github.com/urfave/cli/v3 v3.3.2
-	github.com/urfave/cli/v3 v3.3.2
+	github.com/urfave/cli/v3 v3.3.3
+	github.com/urfave/cli/v3 v3.3.3
 )
 
 require (
