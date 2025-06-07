@@ -2,7 +2,7 @@ module fornever.org
 
 go 1.22
 
-toolchain go1.24.3
+toolchain go1.24.4
 
 require (
 	github.com/gin-gonic/gin v1.10.1
