@@ -8,8 +8,7 @@ require (
 	github.com/gin-gonic/gin v1.10.1
 	github.com/stretchr/testify v1.10.0
 	github.com/takama/daemon v1.0.0
-	github.com/urfave/cli v1.22.16
-	github.com/urfave/cli/v3 v3.3.8
+	github.com/urfave/cli v1.22.17
 	github.com/urfave/cli/v3 v3.3.8
 )
 
@@ -20,7 +19,7 @@ require (
 	github.com/chenzhuoyu/iasm v0.9.1 // indirect
 	github.com/cloudwego/base64x v0.1.4 // indirect
 	github.com/cloudwego/iasm v0.2.0 // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.5 // indirect
+	github.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.6 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
