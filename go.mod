@@ -6,7 +6,7 @@ toolchain go1.25.0
 
 require (
 	github.com/gin-gonic/gin v1.10.1
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.0
 	github.com/takama/daemon v1.0.0
 	github.com/urfave/cli v1.22.17
 	github.com/urfave/cli/v3 v3.4.1
