@@ -13,7 +13,7 @@ jobs:
         id: tagName
 
       - name: setup golang
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: 1.25
         id: go
