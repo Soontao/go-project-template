@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - name: setup
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: ${{ matrix.go-version }}
         id: go
