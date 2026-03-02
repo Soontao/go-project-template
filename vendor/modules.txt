@@ -205,7 +205,7 @@ github.com/ugorji/go/codec
 # github.com/urfave/cli v1.22.17
 ## explicit; go 1.11
 github.com/urfave/cli
-# github.com/urfave/cli/v3 v3.6.2
+# github.com/urfave/cli/v3 v3.7.0
 ## explicit; go 1.22
 # go.mongodb.org/mongo-driver/v2 v2.5.0
 ## explicit; go 1.19
